@@ -35,6 +35,7 @@ export default function Header() {
             <Link href={"/programs"}> Programs </Link>
             <Link href={"/blog"}> Blog </Link>
             <Link href={"/faculty"}> Faculty </Link>
+            <Link href={"/contact"}> Contact </Link>
           </Flex>
           <Box
             display={{
@@ -77,6 +78,9 @@ export default function Header() {
                 </MenuItem>
                 <MenuItem>
                   <Link href={"/faculty"}> Faculty </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link href={"/contact"}> Contact  </Link>
                 </MenuItem>
               </MenuList>
             </Menu>

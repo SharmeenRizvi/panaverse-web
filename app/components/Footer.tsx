@@ -17,9 +17,10 @@ import { FaInstagram, FaTwitter, FaYoutube, FaGithub } from "react-icons/fa";
 export default function Footer() {
   return (
     <Box
-      bgGradient="linear(to-l, #01032B, #010279)"
-      bgAttachment={"fixed"}
-      bgImage="https://media.zicxa.com/1186033"
+      // height={"500"}
+      // bgImage="./wave.png"
+       bgGradient="linear(to-tl, #01032B, #010279)"
+      bgAttachment='fixed'
     >
       <Container maxW={1400}>
         <SimpleGrid
@@ -34,7 +35,7 @@ export default function Footer() {
             </Heading>
             <Image
               m={{ base: "auto", lg: "0" }}
-              src="/logo2.png"
+              src="/logo.png"
               alt={"panaverse logo"}
               height={73}
             />

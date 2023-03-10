@@ -212,6 +212,16 @@ export default function page() {
               </Text> */}
                 </Box>
               </Flex>
+
+              <Text>
+                {" "}
+                The mission of PIAIC is to reshape Pakistan by revolutionizing
+                education, research, and business by adopting latest,
+                cutting-edge technologies. Experts are calling this the 4th
+                industrial revolution. We want Pakistan to become a global hub
+                for AI, data science, cloud native computing, edge computing,
+                blockchain, augmented reality, and internet of things.
+              </Text>
             </Container>
           </Box>
         </Container>

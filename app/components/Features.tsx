@@ -14,7 +14,7 @@ import {RevealWrapper} from 'next-reveal'
 //import image1 from "../../public/class.png";
 import image3 from "../../public/tech11.webp";
 import image1 from "../../public/tech12.jpg";
-import image2 from "../../public/techa.png";
+import image2 from "../../public/techa.jpg";
 export default function Features() {
   return (
     <>

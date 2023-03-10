@@ -14,7 +14,7 @@ export default function page() {
         <Container maxWidth={"1400"}>
           <RevealList interval={300} delay={600} reset={true}>
             <Center flexDir="column">
-              <Heading size="2xl">Course Outline</Heading>
+              {/* <Heading size="2xl">Programs Offered</Heading> */}
               <Text
                 mt="20px"
                 px={{ lg: "130px", base: "10px" }}
@@ -33,8 +33,8 @@ export default function page() {
           </RevealList>
           <Center flexDir="column" mt="20px">
             <RevealList interval={300} delay={600} reset={true}>
-              <Heading size="xl">
-                Core Courses (Common in all Specializations)
+              <Heading size="xl" textAlign={"center"}>
+                Core Courses
               </Heading>
               <Text
                 mt="20px"
@@ -42,7 +42,7 @@ export default function page() {
                 textAlign={{ lg: "justify", base: "start" }}
               >
                 Every participant of the program will start by completing the
-                following three core courses.
+                following three compulsory core courses.
               </Text>
             </RevealList>
           </Center>
@@ -124,7 +124,7 @@ export default function page() {
             {cards.map((elem) => (
               <Box key={elem.id}>
                 <Center flexDir="column" mt="50px">
-                  <Heading color={"blue.900"} size="lg">
+                  <Heading color={"darkblue"} size="lg">
                     {elem.heading1}
                   </Heading>
                   <Text
