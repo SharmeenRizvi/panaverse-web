@@ -33,7 +33,7 @@ export default function Header() {
             <Link href={"/"}> Home </Link>
             <Link href={"/about"}> About </Link>
             <Link href={"/programs"}> Programs </Link>
-            <Link href={"/blog"}> Blog </Link>
+            {/* <Link href={"/blog"}> Blog </Link> */}
             <Link href={"/faculty"}> Faculty </Link>
             <Link href={"/contact"}> Contact </Link>
           </Flex>
@@ -47,7 +47,8 @@ export default function Header() {
               mt={"10px"}
               size={"md"}
               colorScheme={"blue"}
-              bgGradient="linear(to-l, #09C6F9, #150fd0)"
+              bgGradient="linear(to-b, #2AECE9, #0201B5)"
+              //bgGradient="linear(to-l, #09C6F9, #150fd0)"
               color="white"
               float={"right"}
             >
@@ -73,14 +74,14 @@ export default function Header() {
                 <MenuItem>
                   <Link href={"/programs"}> Programs </Link>
                 </MenuItem>
-                <MenuItem>
+                {/* <MenuItem>
                   <Link href={"/blog"}> Blog </Link>
-                </MenuItem>
+                </MenuItem> */}
                 <MenuItem>
                   <Link href={"/faculty"}> Faculty </Link>
                 </MenuItem>
                 <MenuItem>
-                  <Link href={"/contact"}> Contact  </Link>
+                  <Link href={"/contact"}> Contact </Link>
                 </MenuItem>
               </MenuList>
             </Menu>

@@ -15,7 +15,8 @@ export default function Banner() {
       <Box>
         <Box
           bgAttachment={"fixed"}
-          bgImage="https://media.zicxa.com/1186033"
+          bgImage="https://images.hdqwalls.com/download/green-blue-purple-blur-4k-68-1366x768.jpg"
+          bgSize={"cover"}
           shadow={"lg"}
         >
           <RevealWrapper
@@ -45,7 +46,8 @@ export default function Banner() {
                   <Button
                     mt={"30px"}
                     colorScheme={"blue"}
-                    bgGradient="linear(to-l, #09C6F9, #150fd0)"
+                    bgGradient="linear(to-b, #2AECE9, #0201B5)"
+                    //bgGradient="linear(to-l, #09C6F9, #150fd0)"
                     size={"lg"}
                     color="white"
                   >
@@ -71,28 +73,28 @@ export default function Banner() {
 
         <Box>
           <Container
-            mt={"100"}
+            mt={{lg:"100", base:'70'}}
             shadow={"dark-lg"}
-            bgGradient="linear(to-r, #2AECE9, #0201B5)"
+            bgGradient="linear(to-b, #2AECE9, #0201B5)"
             alignItems={"center"}
             maxW={"1000"}
             maxHeight={"500"}
             color={"white"}
             borderRadius={"xl"}
-            mb={"100"}
+            mb={{lg:"100", base:'50'}}
             pb="10"
           >
             <VStack spacing={"2"} align={"center"}>
               <RevealList interval={200} delay={500} reset={true}>
                 <Heading
-                  mx={{ lg: "200", base: "30px" }}
+                  mx={{ lg: "220", base: "10px" }}
                   mt={"8"}
                   size={"lg"}
                   fontWeight="bold"
                 >
                   The Program in a Nutshell:
                 </Heading>
-                <Heading mx={{ lg: "250", base: "58px" }} size={"lg"}>
+                <Heading mx={{ lg: "280", base: "10px" }} size={"lg"}>
                   Earn While You Learn
                 </Heading>
                 <Text align={"center"}>
@@ -111,7 +113,7 @@ export default function Banner() {
             <Flex gap="100px" display={{ lg: "flex", base: "grid" }}>
               <Box
                 flexBasis={"50%"}
-                mt={{ lg: "0", base: "10px" }}
+                mt={{ lg: "0", base: "0px" }}
                 ml={{ base: "10px" }}
                 mb={{ base: "-100px" }}
               >
@@ -158,7 +160,8 @@ export default function Banner() {
                     mt={"10px"}
                     size={"lg"}
                     colorScheme={"blue"}
-                    bgGradient="linear(to-l, #09C6F9, #150fd0)"
+                    bgGradient="linear(to-b, #2AECE9, #0201B5)"
+                    //bgGradient="linear(to-l, #09C6F9, #150fd0)"
                   >
                     Read More
                   </Button>
@@ -198,7 +201,8 @@ export default function Banner() {
                     mt={"10px"}
                     size={"lg"}
                     colorScheme={"blue"}
-                    bgGradient="linear(to-l, #09C6F9, #150fd0)"
+                    bgGradient="linear(to-b, #2AECE9, #0201B5)"
+                    //bgGradient="linear(to-l, #09C6F9, #150fd0)"
                   >
                     Read More
                   </Button>
@@ -208,7 +212,7 @@ export default function Banner() {
                 flexBasis={"50%"}
                 mt={{ lg: "10px", base: "5px" }}
                 ml={{ lg: "100px", base: "5px" }}
-                mb={{ lg: "30px", base: "10px" }}
+                mb={{ lg: "30px", base: "8px" }}
               >
                 <RevealWrapper
                   origin="left"
@@ -220,8 +224,8 @@ export default function Banner() {
                   <Image
                     src={image2}
                     alt="panaverse-intro"
-                    width={"1200"}
-                    height={"1200"}
+                    width={"1400"}
+                    height ='1300'
                   />
                 </RevealWrapper>
               </Box>

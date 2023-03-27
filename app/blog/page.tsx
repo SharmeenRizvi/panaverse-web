@@ -6,7 +6,7 @@ import {
   Heading,
   Link,
   Image,
-  Text,
+  Text, Flex,
   Divider,
   HStack,
   Tag,
@@ -18,13 +18,59 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { RevealList } from "next-reveal";
-
+import { RevealWrapper } from 'next-reveal'
 export default function page() {
   return (
     <>
       <Box mb="30px">
-        <Home title="Blog" src="https://media.zicxa.com/1186033" />;
+        {/* <Home title="Blog" src="https://media.zicxa.com/1186033" />; */}
         <Container maxW={"1400"}>
+          <Flex
+           
+            
+            display={{ lg: "flex", base: "grid" }}
+          >
+            <Box flexBasis={"25%"} ml="5">
+              <RevealWrapper
+                origin="left"
+                delay={100}
+                duration={1200}
+                distance="200px"
+                reset={true}
+              >
+                <Heading
+                 mt={{lg:'20', base:'5'}}
+                  size={{ lg: "2xl", base: "xl" }}
+                  color={"black.700"}
+                 
+                >
+                 Tech Blog
+                </Heading>
+               
+              </RevealWrapper>
+            </Box>
+            <Box
+             mt='10'
+              flexBasis={"75%"}
+            >
+              <RevealWrapper
+                origin="top"
+                delay={100}
+                duration={1200}
+                distance="200px"
+                reset={true}
+              >
+                <Image
+                  src={"/blog.png"}
+                  alt="possible with teamwork"
+                  width={{ lg: "1200", base: "800" }}
+                  height={{ lg: " 550", base: "250" }}
+                />
+              </RevealWrapper>
+            </Box>
+          </Flex>
+        </Container>
+        <Container maxW={"1400"} mt={{lg:'20', base:'10'}}>
           <Heading as="h1">Building The Metaverse</Heading>
           <RevealList interval={100} delay={500} reset={true}>
             <Box
@@ -336,21 +382,21 @@ export default function page() {
                 </Box>
               </Box>
             </Box>
-           
-            <Box 
+
+            <Box
               marginTop={{ base: "1", sm: "5" }}
               display="flex"
               flexDirection={{ base: "column", sm: "row" }}
               justifyContent="space-between"
             >
-              <Box 
+              <Box
                 display="flex"
                 flex="1"
                 marginRight="3"
                 position="relative"
                 alignItems="center"
               >
-                <Box 
+                <Box
                   width={{ base: "100%", sm: "85%" }}
                   zIndex="2"
                   marginLeft={{ base: "0", sm: "5%" }}
@@ -370,15 +416,14 @@ export default function page() {
                     />
                   </Link>
                 </Box>
-                <Box zIndex="1" width="100%" position="absolute" height="100%" >
-                  <Box 
+                <Box zIndex="1" width="100%" position="absolute" height="100%">
+                  <Box
                     bgGradient={useColorModeValue(
                       "radial(orange.600 1px, transparent 1px)",
                       "radial(orange.300 1px, transparent 1px)"
                     )}
                     backgroundSize="20px 20px"
                     opacity="0.4"
-                    
                     height="100%"
                   />
                 </Box>
@@ -417,7 +462,7 @@ export default function page() {
                 </Text>
               </Box>
             </Box>
-            
+
             <Box
               marginTop={{ base: "1", sm: "5" }}
               display="flex"

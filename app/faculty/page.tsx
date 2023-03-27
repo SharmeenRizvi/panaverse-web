@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Home from '../components/Home'
+// import Home from '../components/Home'
 import { Box, Card, CardBody, Stack, Heading, Flex, Divider, Text,  CardFooter, SimpleGrid, Container, Center } from '@chakra-ui/react'
 import zia from '../../public/Ziakhan.webp'
 import hira from '../../public/hirakhan.jpeg'
@@ -11,7 +11,7 @@ import asif from '../../public/asifshah.png'
 import { FaLinkedin, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 import { RevealWrapper } from "next-reveal";
 import blue from '../../public/blue.png'
-
+import hero from '../../public/hero.jpg'
  
 import Image from 'next/image'
 
@@ -21,22 +21,80 @@ export default function page() {
   return (
     <>
       <Box>
-        <Home title="Meet the Team" src="https://media.zicxa.com/1186033" />
-
+        {/* <Home
+          title="Meet the Team"
+          src="https://cdn.pixabay.com/photo/2015/04/28/07/27/gradient-743134_960_720.jpg"
+        /> */}
         <Container maxW={"1400"}>
+          <Flex
+            display={{ lg: "flex", base: "grid" }}
+            pt={{ lg: "80px", base: "30px" }}
+            pb={{ lg: "100px", base: "10px" }}
+            // px={{ lg: "15px", base: "5px" }}
+          >
+            <Box flexBasis={"35%"} ml="5">  <RevealWrapper
+                origin="left"
+                delay={100}
+                duration={1200}
+                distance="200px"
+                reset={true}
+              >
+              <Heading
+                size={{ lg: "2xl", base: "2xl" }}
+                color={"black.700"}
+                lineHeight='taller'
+              >
+                It’s possible with teamwork
+              </Heading>
+              <Text size="xl" color={"black.700"} pt={"20px"}>
+                Together we will take Pakistan to new heights inshaAllah.
+              </Text>
+              </RevealWrapper>
+            </Box>
+            <Box
+             // mt={{ lg: "-20px", base: "0" }}
+              // pl={{ lg: "55px", base: "10px" }}
+              flexBasis={"65%"}
+            > <RevealWrapper
+                origin="top"
+                delay={100}
+                duration={1200}
+                distance="200px"
+                reset={true}
+              >
+              <Image
+                src={hero}
+                alt="possible with teamwork"
+                // width={{ lg: "1000", base: "500" }}
+                // height={{ lg: " 500", base: "200" }}
+              /> </RevealWrapper>
+            </Box>
+          </Flex>
+        </Container>
+        <Container
+          maxW={"1400"}
+          alignContent="center"
+          bgGradient="linear(to-b, #74ebd5, #ACB6E5)"
+          py="15"
+          px="15"
+          boxShadow={"dark-lg"}
+          mb="5"
+          mt={{ base: "10" }}
+        >
           <Box ml={{ lg: "150px" }} mr={{ lg: "150px" }}>
-            {/* <Heading size="2xl" m="50px" textAlign={"center"}>
+            <Heading
+              m="5"
+              textAlign={"center"}
+              size={{ lg: "2xl", base: "xl" }}
+            >
               Meet the Team
-            </Heading> */}
-            {/* <Text fontWeight={"bold"} color='darkblue' align={"center"}>
+            </Heading>
+            <Text textAlign={"center"} size="lg">
               Our team, the ones who work tirelessly to empower our students.
-            </Text> */}
-            {/* <Center mt="20px" mb="20px">
-          <Image src={blue} alt="Our Team" width={"1200"} height={"100"} />
-        </Center> */}
+            </Text>
             <SimpleGrid
               ml={{ lg: "0", base: "7.9" }}
-              mt={"7"}
+              mt={{ lg: "16", base: "6" }}
               alignItems={"center"}
               alignContent="center"
               templateColumns={{ lg: "repeat(3, 1fr)", base: "repeat(1, 1fr)" }}
@@ -49,15 +107,16 @@ export default function page() {
                 reset={true}
               >
                 <Card
-                  maxW="2xs"
-                  maxHeight={"500"}
+                  maxW={{ lg: "2xs", base: "xs" }}
+                  minHeight={"500"}
                   mb={"3"}
                   mr="3"
+                  ml={{ base: "3" }}
                   shadow={"md"}
-                  bgGradient="linear(to-b, #09C6F9, #150fd0)"
-                  // bgGradient="linear(to-br, #2AECE9, #0201B5)"
+                  // bgGradient="linear(to-b, #09C6F9, #150fd0)"
+                  bgGradient="linear(to-br, #2AECE9, #0201B5)"
                 >
-                  <CardBody>
+                  <CardBody pl={{ base: "8" }} mx={{ lg: "1", base: "5" }}>
                     <Image
                       src={zia}
                       alt="Sir Zia Khan"
@@ -70,8 +129,8 @@ export default function page() {
                       </Heading>
                       <Text fontSize={"sm"} color="white">
                         CEO of Panacloud, the world’s first Integrated API
-                        Ownership Economy, Crowdfunding, and Development
-                        Platform. Volunteer COO of PIAIC.
+                        Economy, Crowdfunding & Development Platform. Volunteer COO of
+                        PIAIC.
                       </Text>
                     </Stack>
                   </CardBody>
@@ -106,15 +165,16 @@ export default function page() {
                 reset={true}
               >
                 <Card
-                  maxW="2xs"
-                  maxHeight={"500"}
+                  maxW={{ lg: "2xs", base: "xs" }}
+                  minHeight={"500"}
                   mb={"3"}
                   mr="3"
+                  ml={{ base: "3" }}
                   shadow={"md"}
-                  bgGradient="linear(to-b, #09C6F9, #150fd0)"
-                  // bgGradient="linear(to-br, #2AECE9, #0201B5)"
+                  // bgGradient="linear(to-b, #09C6F9, #150fd0)"
+                  bgGradient="linear(to-br, #2AECE9, #0201B5)"
                 >
-                  <CardBody>
+                  <CardBody pl={{ base: "8" }} mx={{ lg: "1", base: "5" }}>
                     <Image
                       src={hira}
                       alt="Ms Hira Khan"
@@ -127,8 +187,7 @@ export default function page() {
                       </Heading>
                       <Text color="white" fontSize={"sm"}>
                         Director of the Women Empowerment of the Presidential
-                        Initiative for Artificial Intelligence &
-                        Computing.Co-founded Panacloud Pvt. Ltd. in 2012
+                        Initiative for Artificial Intelligence & Computing.
                       </Text>
                     </Stack>
                   </CardBody>
@@ -163,15 +222,16 @@ export default function page() {
                 reset={true}
               >
                 <Card
-                  maxW="2xs"
-                  maxHeight={"500"}
+                  maxW={{ lg: "2xs", base: "xs" }}
+                  minHeight={"500"}
                   mb={"3"}
                   mr="3"
+                  ml={{ base: "3" }}
                   shadow={"md"}
-                  bgGradient="linear(to-b, #09C6F9, #150fd0)"
-                  // bgGradient="linear(to-br, #2AECE9, #0201B5)"
+                  // bgGradient="linear(to-b, #09C6F9, #150fd0)"
+                  bgGradient="linear(to-br, #2AECE9, #0201B5)"
                 >
-                  <CardBody>
+                  <CardBody pl={{ base: "8" }} mx={{ lg: "1", base: "5" }}>
                     <Image
                       src={adil}
                       alt="Sir Adil Altaf"
@@ -220,15 +280,16 @@ export default function page() {
                 reset={true}
               >
                 <Card
-                  maxW="2xs"
-                  maxHeight={"500"}
+                  maxW={{ lg: "2xs", base: "xs" }}
+                  minHeight={"500"}
                   mb={"3"}
+                  ml={{ base: "3" }}
                   mr="3"
                   shadow={"md"}
-                  bgGradient="linear(to-b, #09C6F9, #150fd0)"
-                  // bgGradient="linear(to-br, #2AECE9, #0201B5)"
+                  // bgGradient="linear(to-b, #09C6F9, #150fd0)"
+                  bgGradient="linear(to-br, #2AECE9, #0201B5)"
                 >
-                  <CardBody>
+                  <CardBody pl={{ base: "8" }} mx={{ lg: "1", base: "5" }}>
                     <Image
                       src={zeeshan}
                       alt="Sir Zeeshan Hanif"
@@ -242,7 +303,7 @@ export default function page() {
                       <Text color="white" fontSize={"sm"}>
                         Full-stack cloud and blockchain developer with over a
                         decade of experience in development using MERN Stack and
-                        static content with JAMstack.
+                        JAMstack.
                       </Text>
                     </Stack>
                   </CardBody>
@@ -277,15 +338,16 @@ export default function page() {
                 reset={true}
               >
                 <Card
-                  maxW="2xs"
-                  maxHeight={"500"}
+                  maxW={{ lg: "2xs", base: "xs" }}
+                  minHeight={"500"}
                   mb={"3"}
+                  ml={{ base: "3" }}
                   mr="3"
                   shadow={"md"}
-                  bgGradient="linear(to-b, #09C6F9, #150fd0)"
-                  // bgGradient="linear(to-br, #2AECE9, #0201B5)"
+                  // bgGradient="linear(to-b, #09C6F9, #150fd0)"
+                  bgGradient="linear(to-br, #2AECE9, #0201B5)"
                 >
-                  <CardBody>
+                  <CardBody pl={{ base: "8" }} mx={{ lg: "1", base: "5" }}>
                     <Image
                       src={daniyal}
                       alt="Sir Daniyal Nagori"
@@ -298,8 +360,7 @@ export default function page() {
                       </Heading>
                       <Text color="white" fontSize={"sm"}>
                         Full-stack developer and DevOps Architect with
-                        certification in most cutting edge technologies of
-                        development and deployment.
+                        certification in most cutting edge technologies.
                       </Text>
                     </Stack>
                   </CardBody>
@@ -334,29 +395,34 @@ export default function page() {
                 reset={true}
               >
                 <Card
-                  maxW="2xs"
-                  maxHeight={"500"}
+                  maxW={{ lg: "2xs", base: "xs" }}
+                  minHeight={"500"}
                   mb={"3"}
                   mr="3"
+                  ml={{ base: "3" }}
                   shadow={"md"}
-                  bgGradient="linear(to-b, #09C6F9, #150fd0)"
-                  // bgGradient="linear(to-br, #2AECE9, #0201B5)"
+                  //bgGradient="linear(to-b, #09C6F9, #150fd0)"
+                  bgGradient="linear(to-br, #2AECE9, #0201B5)"
+                  alignContent={"center"}
                 >
-                  <CardBody>
+                  <CardBody pl={{ base: "8" }} mx={{ lg: "1", base: "5" }}>
                     <Image
                       src={asif}
                       alt="Sir Asif Shah"
                       width={"200"}
                       height={"200"}
                     />
-                    <Stack mt="4" spacing="1">
+                    <Stack
+                      mt="4"
+                      spacing="1"
+                      justifyItems={{ lg: "right", base: "center" }}
+                    >
                       <Heading color="darkblue" size="md">
-                        {" "}
                         Asif Shah
                       </Heading>
                       <Text color="white" fontSize={"sm"}>
                         Graphic and Product Designer. Experience of more than a
-                        decade. Hold many national and international awards.
+                        decade. Hold national & international awards.
                       </Text>
                     </Stack>
                   </CardBody>

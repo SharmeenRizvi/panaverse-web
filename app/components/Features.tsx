@@ -35,14 +35,15 @@ export default function Features() {
             spacing={5}
             templateColumns={{ lg: "repeat(3, 1fr)", base: "repeat(1, 1fr)" }}
           >
-            <Card shadow={"lg"}>
-              <RevealWrapper
-                origin="left"
-                delay={100}
-                duration={1000}
-                distance="100px"
-                reset={true}
-              >
+            <RevealWrapper
+              origin="left"
+              delay={100}
+              duration={1000}
+              distance="100px"
+              reset={true}
+            >
+              {" "}
+              <Card shadow={"lg"}>
                 <Image
                   src={image2}
                   alt="panaverse-intro"
@@ -58,61 +59,61 @@ export default function Features() {
                     Consequuntur laudantium nihil enim nisi accusantium!
                   </Text>
                 </CardBody>
-              </RevealWrapper>
-            </Card>
+              </Card>{" "}
+            </RevealWrapper>
 
-           
-               <Card shadow={"lg"}>
-              <RevealWrapper
-                origin="top"
-                delay={100}
-                duration={1000}
-                distance="100px"
-                reset={true}
-              >
-              <Image
-                src={image1}
-                alt="panaverse-intro"
-                // width={{ lg: '500', base: '400' }}
-                // height={{ lg:' 200px', base:'100px' }}
-              />
-              <CardHeader>
-                <Heading size="md">Experienced Faculty</Heading>
-              </CardHeader>
-              <CardBody>
-                <Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consequuntur laudantium nihil enim nisi accusantium!
-                </Text>
-                  </CardBody>
-                  </RevealWrapper>
-            </Card>
-              
-                 <Card shadow={"lg"}>
-              <RevealWrapper
-                origin="left"
-                delay={100}
-                duration={1000}
-                distance="100px"
-                reset={true}
-              >
-              <Image
-                src={image3}
-                alt="panaverse-intro"
-                // width={{ lg: '500', base: '400' }}
-                // height={{ lg:' 200px', base:'100px' }}
-              />
-              <CardHeader>
-                <Heading size="md"> Weekly Helpdesk Sessions</Heading>
-              </CardHeader>
-              <CardBody>
-                <Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consequuntur laudantium nihil enim nisi accusantium!
-                </Text>
-                    </CardBody>
-                    </RevealWrapper>
-            </Card>
+            <RevealWrapper
+              origin="top"
+              delay={100}
+              duration={1000}
+              distance="100px"
+              reset={true}
+            >
+              {" "}
+              <Card shadow={"lg"}>
+                <Image
+                  src={image1}
+                  alt="panaverse-intro"
+                  // width={{ lg: '500', base: '400' }}
+                  // height={{ lg:' 200px', base:'100px' }}
+                />
+                <CardHeader>
+                  <Heading size="md">Experienced Faculty</Heading>
+                </CardHeader>
+                <CardBody>
+                  <Text>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur laudantium nihil enim nisi accusantium!
+                  </Text>
+                </CardBody>
+              </Card>{" "}
+            </RevealWrapper>
+
+            <RevealWrapper
+              origin="left"
+              delay={100}
+              duration={1000}
+              distance="100px"
+              reset={true}
+            >
+              <Card shadow={"lg"}>
+                <Image
+                  src={image3}
+                  alt="panaverse-intro"
+                  // width={{ lg: '500', base: '400' }}
+                  // height={{ lg:' 200px', base:'100px' }}
+                />
+                <CardHeader>
+                  <Heading size="md"> Weekly Helpdesk Sessions</Heading>
+                </CardHeader>
+                <CardBody>
+                  <Text>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur laudantium nihil enim nisi accusantium!
+                  </Text>
+                </CardBody>
+              </Card>
+            </RevealWrapper>
           </SimpleGrid>
         </Container>
       </Box>

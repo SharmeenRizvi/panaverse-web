@@ -18,9 +18,12 @@ export default function Footer() {
   return (
     <Box
       // height={"500"}
-      // bgImage="./wave.png"
-       bgGradient="linear(to-tl, #01032B, #010279)"
-      bgAttachment='fixed'
+      bgImage={
+        "https://img.myloview.com/posters/wide-light-blue-gradient-background-dark-blue-radial-gradient-effect-wallpaper-400-256160061.jpg"
+      }
+      // bgImage="https://videohive.img.customer.envatousercontent.com/files/7ba59abf-a544-43cc-82a1-f30e648ef11f/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=fce6accd6c9fc2fd5364c328c407cc7e"
+      // bgGradient="linear(to-tl, #01032B, #010279)"
+      bgSize={"cover"} 
     >
       <Container maxW={1400}>
         <SimpleGrid
@@ -69,12 +72,12 @@ export default function Footer() {
               NAVIGATE
             </Heading>
             <Grid pt={"40px"} color={"white"} fontSize="sm">
-              <Link href="/">Home</Link>
+              <Link href="/blog">Blog</Link>
 
-              <Link href="/">Explore</Link>
-              <Link href="/">Syllabus</Link>
-              <Link href="/">About Us</Link>
-              <Link href="/">Contact Us</Link>
+              <Link href="/">Home</Link>
+              <Link href="/programs">Syllabus</Link>
+              <Link href="/about">About Us</Link>
+              <Link href="/contact">Contact Us</Link>
             </Grid>
           </Box>
 
@@ -84,8 +87,8 @@ export default function Footer() {
             </Heading>
             <Grid pt="40px" color="white" fontSize={"sm"}>
               <Link href="/">Legal</Link>
-              <Link href="/">Our Vision</Link>
-              <Link href="/"> Help Center</Link>
+              <Link href="/about">Our Vision</Link>
+              <Link href="/contact"> Help Center</Link>
               <Link href="/">Privacy Policy</Link>
               <Link href="/">Terms of Service</Link>
             </Grid>

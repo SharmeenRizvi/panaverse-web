@@ -1,16 +1,41 @@
 'use client'
-import { Container, Box, Center, Heading, Text, Flex } from '@chakra-ui/react';
+import { Container, Box, Center, Heading, Text, Flex, Image } from '@chakra-ui/react';
 import React from 'react'
 import Home from '../components/Home'
 import { cards } from '../components/database';
 import { RevealList } from "next-reveal";
+import coding from '../../public/coding.png'
 
-
+import {RevealWrapper} from 'next-reveal'
 export default function page() {
   return (
     <>
-      <Home title="Programs" src="https://media.zicxa.com/1186033" />;
-      <Box pt="30px">
+      {/* <Home title="Programs" src="https://media.zicxa.com/1186033" />; */}
+      <Box>
+        <Container maxW={"1400"}> <RevealWrapper
+                origin="top"
+                delay={100}
+                duration={1200}
+                distance="200px"
+                reset={true}
+              >
+          <Box mx={{lg:"150", base:'0'}}>
+            <Image
+              src={'/coding.png'}
+              alt="coding"
+              width={{ lg: "1000", base: "500" }}
+              height={{ lg: " 500", base: "200" }}
+            />
+          </Box>
+          <Heading mt={{lg:'3'}}
+            size={{ lg: "2xl", base: "xl" }}
+            color={"black.700"}
+            lineHeight='1.5'
+            textAlign={"center"}
+          >
+            Programs Available
+          </Heading>{" "} </RevealWrapper>
+        </Container>
         <Container maxWidth={"1400"}>
           <RevealList interval={300} delay={600} reset={true}>
             <Center flexDir="column">
@@ -120,7 +145,7 @@ export default function page() {
         </Container>
 
         <Container maxW={"1400px"} mb="30px">
-          <RevealList interval={300} delay={600} reset={true}>
+          <RevealList interval={300} delay={500} reset={true}>
             {cards.map((elem) => (
               <Box key={elem.id}>
                 <Center flexDir="column" mt="50px">
