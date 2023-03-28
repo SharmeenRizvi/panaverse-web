@@ -114,9 +114,9 @@ export default function page() {
                   justifyContent="space-between"
                 >
                   <SimpleGrid
-                    gap={{lg:"25", base:'5'}}
+                    gap={{ lg: "25", base: '5'}}
                     templateColumns={{
-                      base: "repeat(3, 1fr)",
+                      base: "repeat(2, 1fr)", md: 'repeat(3, 1fr)'
                     }}
                   >
                     <RevealWrapper
@@ -252,7 +252,7 @@ export default function page() {
               </Stack>
             </RevealList>
           </Box>
-          <Center>
+          {/* <Center>
             <Box
               boxShadow={"md"}
               bgColor={"blue.100"}
@@ -325,7 +325,7 @@ export default function page() {
                 </RevealWrapper>
               </Flex>
             </Box>
-          </Center>
+          </Center> */}
           
         </Container>
       </Box>

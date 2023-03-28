@@ -56,7 +56,7 @@ export default function page() {
               // pl={{ lg: "55px", base: "10px" }}
               flexBasis={"65%"}
             > <RevealWrapper
-                origin="top"
+                origin="left"
                 delay={100}
                 duration={1200}
                 distance="200px"
