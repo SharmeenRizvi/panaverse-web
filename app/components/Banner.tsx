@@ -91,13 +91,14 @@ export default function Banner() {
                   mt={"8"}
                   size={"lg"}
                   fontWeight="bold"
+                  
                 >
                   The Program in a Nutshell:
                 </Heading>
                 <Heading mx={{ lg: "280", base: "10px" }} size={"lg"}>
                   Earn While You Learn
                 </Heading>
-                <Text align={"center"}>
+                <Text align={{lg:"center", base:'start'}} mx={{base:'10px'}}>
                   In this brand-new type of curriculum, students will learn how
                   to make money and boost exports in the classroom and will
                   begin doing so within six months of the program’s beginning.
