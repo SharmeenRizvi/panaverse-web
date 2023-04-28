@@ -43,7 +43,7 @@ export default function Features() {
               reset={true}
             >
               {" "}
-              <Card shadow={"lg"}>
+              <Card  shadow={"lg"}>
                 <Image
                   src={image2}
                   alt="panaverse-intro"
@@ -59,7 +59,7 @@ export default function Features() {
                     Consequuntur laudantium nihil enim nisi accusantium!
                   </Text>
                 </CardBody>
-              </Card>{" "}
+              </Card>
             </RevealWrapper>
 
             <RevealWrapper
@@ -69,8 +69,7 @@ export default function Features() {
               distance="100px"
               reset={true}
             >
-              {" "}
-              <Card shadow={"lg"}>
+              <Card  shadow={"lg"}>
                 <Image
                   src={image1}
                   alt="panaverse-intro"
@@ -96,7 +95,7 @@ export default function Features() {
               distance="100px"
               reset={true}
             >
-              <Card shadow={"lg"}>
+              <Card  shadow={"lg"}>
                 <Image
                   src={image3}
                   alt="panaverse-intro"
@@ -104,7 +103,7 @@ export default function Features() {
                   // height={{ lg:' 200px', base:'100px' }}
                 />
                 <CardHeader>
-                  <Heading size="md"> Weekly Helpdesk Sessions</Heading>
+                  <Heading size="md">Weekly Help Sessions</Heading>
                 </CardHeader>
                 <CardBody>
                   <Text>

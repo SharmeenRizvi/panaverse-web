@@ -15,7 +15,7 @@ export default function page() {
         {/* <Home title="About" src="https://media.zicxa.com/1186033" /> */}
 
         <Container maxW={"1400"}>
-          <Flex 
+          <Flex
             pt={{ lg: "20", base: "5" }}
             mb="15"
             display={{ lg: "flex", base: "grid" }}
@@ -81,7 +81,7 @@ export default function page() {
           bgGradient="linear(to-bl, #2AECE9, #0201B5)"
           boxShadow={"dark-lg"}
         >
-          <Container maxW={"1400"} >
+          <Container maxW={"1400"}>
             <Center>
               <Box borderRadius={"lg"}>
                 <Container maxW={"1400"}>
@@ -125,26 +125,24 @@ export default function page() {
                         <Text
                           mt="3"
                           size={"sm"}
-                          textAlign={{ lg: "justify", base: 'start' }}
+                          color={"black.700"}
+                          textAlign={{ lg: "justify", base: "start" }}
                         >
                           Dr. Arif Alvi was sworn in as the 13th President of
                           Islamic Republic of Pakistan on 9th September 2018.
                         </Text>
                         <Text
                           mt="3"
-                          size={"sm"} pb={{base:'15'}}
+                          size={"sm"}
+                          color={"black.700"}
+                          pb={{ base: "15" }}
                           textAlign={{ lg: "justify", base: "start" }}
                         >
-                          Dr. Arif Alvi was born in 1949 and completed his early
-                          education in Karachi. He did his Bachelor of Dental
-                          Surgery (BDS) from De’ Montmorency College of
-                          Dentistry, Lahore where he was declared the “Best
-                          Graduate”. He completed his Masters of Science in the
-                          field of Prosthodontics from University of Michigan
-                          (1975) and in Orthodontics from University of Pacific,
-                          San Francisco (1982). He was awarded fellowship
-                          ‘Diplomatic American Board of Orthodontists (1995)’.
-                          Dr. Arif Alvi has keen interest in education and
+                          Dr. Arif Alvi was born in 1949. He did his Bachelor of Dental
+                          Surgery from De’ Montmorency College of
+                          Dentistry. He completed his Masters of Science in the
+                          field of Prosthodontics from University of Michigan and in Orthodontics from University of Pacific,
+                          San Francisco. Dr. Arif Alvi has keen interest in education and
                           health sectors. He considers people of Pakistan as the
                           most precious asset and, therefore, accords special
                           focus to human resource development in the country.
@@ -158,7 +156,8 @@ export default function page() {
           </Container>
         </Box>
         <Box
-          bgGradient="linear(to-tr, #2AECE9, #0201B5)" mt={{base:'10'}}
+          bgGradient="linear(to-tr, #2AECE9, #0201B5)"
+          mt={{ base: "10" }}
           boxShadow={"dark-lg"}
           mb="20"
         >
@@ -170,7 +169,7 @@ export default function page() {
             >
               <Box
                 flexBasis={"70%"}
-                ml={{lg:"5"}}
+                ml={{ lg: "5" }}
                 mx={{ base: "5" }}
                 color={"white"}
                 p={{ lg: "8", base: "0" }}
@@ -186,12 +185,12 @@ export default function page() {
                     mb="7"
                     pt={{ base: "25" }}
                     size={{ lg: "xl", base: "xl" }}
-                    color={"black.700"} 
+                    color={"black.700"}
                   >
                     Sir Zia Khan
                   </Heading>
                   <Text
-                    size={{ lg: "sm", base: "sm" }}
+                    size="sm"
                     color={"black.700"}
                     pt={{ lg: "10px", base: "0" }}
                     textAlign={{ lg: "justify", base: "start" }}
@@ -210,14 +209,13 @@ export default function page() {
                     Arizona State University. Master in Economics from KU.
                     Certified Public Accountant and Certified Management
                     Accountant in USA.
-                  </Text>{" "}
+                  </Text>
                 </RevealWrapper>
               </Box>
               <Box
                 mt={{ lg: "38", base: "-20" }}
-               
                 flexBasis={"30%"}
-               pl={{base:"90", lg:'-10'}}
+                pl={{ base: "90", lg: "-10" }}
               >
                 <RevealWrapper
                   origin="top"
